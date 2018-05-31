@@ -10,10 +10,9 @@ function createPost(){
   const pageTemplateFn = _.template(pageTemplate)
 
   let commentsTemplate = document.getElementById("comments-template").innerHTML
-  const commentsTemplateFn = _.template(commentsTemplate)
 
   const postTemplateHTML = postTemplateFn({'author': author, 'title': title, 'body': body})
-  const pageTemplateHTML = pageTemplateFn({'post': postTemplateHTML})
+  const pageTemplateHTML = pageTemplateFn({'post': postTemplateHTML, 'comments': commentsTemplate })
 
   const mainHTML = document.getElementsByTagName('main')[0]
   mainHTML.innerHTML += pageTemplateHTML
