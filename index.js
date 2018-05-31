@@ -28,4 +28,6 @@ function postComment(){
   const commentTemplateHTML = commentTemplateFn({'commenter':commenter, 'commentBody':commentBody})
 
   let commentsSection = document.getElementById("comments")
+
+  commentsSection +=commentTemplateHTML
 }
