@@ -13,7 +13,7 @@ function createPost(){
 
   const postTemplateHTML = postTemplateFn({'author': author, 'title': title, 'body': body})
   const pageTemplateHTML = pageTemplateFn({'post': postTemplateHTML, 'comments': commentsTemplate })
-debugger;
+
   const mainHTML = document.getElementsByTagName('main')[0]
   mainHTML.innerHTML += pageTemplateHTML
 }
@@ -27,5 +27,5 @@ function postComment(){
 
   const commentTemplateHTML = commentTemplateFn({'commenter':commenter, 'commentBody':commentBody})
 
-  console.log(document.querySelectorAll(".comment"))
+  let commentsSection = document.getElementById("comments")
 }
