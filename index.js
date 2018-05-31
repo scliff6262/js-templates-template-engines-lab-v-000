@@ -19,4 +19,7 @@ function createPost(){
 function postComment(){
   const commenter = document.getElementById("commenter").value
   const commentBody = document.getElementById("commentBody").value
+
+  let commentTemplate = document.getElementById("comment-template").innerHTML
+  const commentTemplateFn = _.template(commentTemplate)
 }
