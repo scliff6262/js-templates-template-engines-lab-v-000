@@ -39,7 +39,8 @@
       </form>
     </script>
     <script id="comment-template" type="text/x-lodash-template">
-      <footer></footer>
+      <p><%-commentBody%></p>
+      <footer><%-commenter%></footer>
     </script>
     <form class="" id="post-form" onsubmit="createPost(); return false;">
       Title: <input type="text" id="postTitle" value=""><br>
