@@ -29,5 +29,5 @@ function postComment(){
 
   let commentsSection = document.getElementById("comments")
   debugger;
-  commentsSection += commentTemplateHTML.innerHTML
+  commentsSection.innerHTML += commentTemplateHTML
 }
