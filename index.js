@@ -29,5 +29,5 @@ function postComment(){
 
   let commentsSection = document.getElementById("comments")
 
-  commentsSection +=commentTemplateHTML
+  commentsSection += commentTemplateHTML
 }
