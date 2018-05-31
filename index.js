@@ -17,5 +17,6 @@ function createPost(){
 }
 
 function postComment(){
-  
+  const commenter = document.getElementById("commenter").value
+  const commentBody = document.getElementById("commentBody").value
 }
