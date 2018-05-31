@@ -22,4 +22,6 @@ function postComment(){
 
   let commentTemplate = document.getElementById("comment-template").innerHTML
   const commentTemplateFn = _.template(commentTemplate)
+
+  const commentTemplateHTML = commentTemplateFn({'commenter':commenter, 'commentBody':commentBody})
 }
