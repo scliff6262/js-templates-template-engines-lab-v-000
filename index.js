@@ -9,6 +9,9 @@ function createPost(){
   let pageTemplate = document.getElementById("page-template").innerHTML
   const pageTemplateFn = _.template(pageTemplate)
 
+  let commentsTemplate = document.getElementById("comments-template").innerHTML
+  const commentsTemplateFn = _.template(commentsTemplate)
+
   const postTemplateHTML = postTemplateFn({'author': author, 'title': title, 'body': body})
   const pageTemplateHTML = pageTemplateFn({'post': postTemplateHTML})
 
