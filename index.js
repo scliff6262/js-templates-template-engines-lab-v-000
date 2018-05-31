@@ -24,4 +24,6 @@ function postComment(){
   const commentTemplateFn = _.template(commentTemplate)
 
   const commentTemplateHTML = commentTemplateFn({'commenter':commenter, 'commentBody':commentBody})
+
+  console.log(document.querySelectorAll(".comment"))
 }
